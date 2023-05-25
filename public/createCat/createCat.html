@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Add Cat</title>
+  <link rel="stylesheet" href="../createCat/style.css">
+</head>
+
+
+<body>
+  <nav class="navbar">
+    <div class="left-items">
+
+      <a href="/allCats" class="nav-button">Home</a>
+
+    </div>
+
+    <div class="center-item">
+      <h1>Edit Cats</h1>
+    </div>
+
+    <div class="right-items">
+      <a href="/manage/add" class="nav-button">+ Add New Cat</a>
+    </div>
+  </nav>
+  <div class="container">
+    <form>
+      <label for="name"> Name</label>
+      <input type="text" name="name" id="name"  placeholder="Cat name" required>
+
+      <label for="age">age</label>
+      <input type="text" name="age" id="age" placeholder="2" required>
+
+      <label for="color">color</label>
+      <input type="text" name="color"id="color"  placeholder="Cat color" required>
+
+      <label for="Description">Description</label>
+      <input type="text" name="description" id="description" placeholder="Playful cat !" required>
+
+      <label for="breeds">Breed</label>
+      <select id="breeds" name="breeds">
+        <option value=1>Persian</option>
+        <option value=2>Siamese</option>
+        <option value=3>Burmese</option>
+        <option value=4>Scottish</option>
+        <option value=5>ShortHair</option>
+
+      </select>
+
+      <button id="submit">Add</button>
+    </form>
+  </div>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="../createCat/createCat.js"></script>
+</body>
+
+</html>

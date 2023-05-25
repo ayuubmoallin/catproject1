@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Kitten Adoption</title>
+  <link rel="stylesheet" href="allCatsStyle.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="left-items">
+      <a class="nav-button">Welcome to Kitten Adoption Center</a>
+      <a href="">Breeds</a>
+      <select id="breeds" onchange="filterCats()"> Select </select>
+
+    </div>
+    <div class="right-items">
+      <a class="nav-button" onclick="manage()">Manage</a>
+    </div>
+  </nav>
+
+  <div class="container">
+
+  </div>
+
+
+  <dialog id="dialog" class="dialog">
+    <div id="dialogContent" class="dialog-content">
+    </div>
+  </dialog>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="allCats.js"></script>
+</body>
+
+
+</html>
